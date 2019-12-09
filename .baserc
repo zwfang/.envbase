@@ -1,0 +1,29 @@
+# color
+orange="\[\e[0;91m\]"
+black="\[\e[0;30m\]"
+red="\[\e[0;31m\]"
+green="\[\e[0;32m\]"
+yellow="\[\e[0;33m\]"
+blue="\[\e[0;34m\]"
+purple="\[\e[0;35m\]"
+cyan="\[\e[0;36m\]"
+white="\[\e[0;37m\]"
+orange="\[\e[0;91m\]"
+reset_color="\[\e[39m\]"
+normal="\[\e[0m\]"
+
+# alias 
+alias ls='ls -G'
+alias l='ls -Gl'
+alias ll='ls -alG'
+alias g='git'
+
+
+# prompt
+export PS1="${orange}\w ${yellow}\t ${red}$ ${reset_color}"
+
+
+# custom function
+function IS_EXISTS_IN_ENV_PATH() {
+    echo ${PATH} | /usr/bin/tr ':' '\n' | grep -q -E "^${1}$"
+}
