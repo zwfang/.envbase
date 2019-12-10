@@ -25,3 +25,6 @@ export PS1="${orange}\w ${yellow}\t ${red}$ ${reset_color}"
 
 # custom function
 source ~/.envbase/funcs.bash
+
+# env
+export tsinghua='https://pypi.tuna.tsinghua.edu.cn/simple'
