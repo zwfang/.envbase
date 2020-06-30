@@ -13,14 +13,16 @@ reset_color="\[\e[39m\]"
 normal="\[\e[0m\]"
 
 # alias 
-alias ls='ls -G'
-alias l='ls -Gl'
-alias ll='ls -alG'
+alias ls='ls -FG'
+alias l='ls -l'
+alias ll='ls -al'
 alias g='git'
+alias c='clear'
 
 
 # prompt
-export PS1="${orange}\w ${yellow}\t ${red}$ ${reset_color}"
+# export PS1="${orange}\w ${yellow}\t ${red}$ ${reset_color}"
+export PS1="\W $ "
 
 
 # custom function
